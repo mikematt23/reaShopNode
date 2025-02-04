@@ -4,7 +4,7 @@ const db = mysql.createPool({
     host:"junction.proxy.rlwy.net",
     database:"railway",
     user:'root',
-    password:"",
+    password:process.env.MYSQLPASSWORD,
     port:13682
 })
 
