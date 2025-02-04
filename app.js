@@ -10,6 +10,7 @@ const app =express()
 
 
 const port = process.env.PORT || 3000
+console.log(port)
 
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'/index.html'))
