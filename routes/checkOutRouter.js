@@ -21,7 +21,7 @@ router.post("/teaCheckout",async(req,res)=>{
     }],
     mode: 'payment',
     ui_mode: 'embedded',
-    return_url: 'http://localhost:5173/ThankYou'
+    return_url: 'https://rococo-moxie-2d4439.netlify.app/ThankYou'
   });
 
   res.send({clientSecret: session.client_secret, id: session.id});
